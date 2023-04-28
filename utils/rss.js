@@ -7,13 +7,13 @@ const date = new Date();
 
 const feedObject = new Feed({
   title: `Ryan's Notes`,
-  description: "Hello, I'm Ryan Parag - these are my notes about designing in the open and building thoughtful products.",
+  description: "Hello, I'm Gloria Christiana - these are my notes about designing in the open and building thoughtful products.",
   id: baseUrl,
   link: baseUrl,
   language: "en",
   image: `${baseUrl}/notes-logo.svg`,
   favicon: `${baseUrl}/favicon.ico`,
-  copyright: `All rights reserved ${date.getFullYear()}, Ryan Parag`,
+  copyright: `All rights reserved ${date.getFullYear()}, Gloria Christiana`,
   updated: date,
   generator: "Next.js using Feed for Node.js",
   feedLinks: {

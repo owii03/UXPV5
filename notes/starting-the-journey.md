@@ -1,6 +1,6 @@
 ---
 title: 'Starting the Journey'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Kicking off designing things in the open and sharing the things I build'
 date: '2020-07-07'
 hero_image: /static/starting-the-journey.png

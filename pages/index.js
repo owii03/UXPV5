@@ -30,8 +30,8 @@ const Index = ({ posts, work, title, description, ...props }) => {
             <div style={{ width: '64px'}}>
               <Logo/>
             </div>
-            <Typography variant={'h1'}>Hey, I'm Ryan!</Typography>
-            <Typography variant={'lead'}>I'm a designer and <Randomizer/>.</Typography>
+            <Typography variant={'h1'}>Hey, I'm Gloria!</Typography>
+            <Typography variant={'lead'}>I'm a Product Designer and <Randomizer/>.</Typography>
             <Typography>
               <Link href="/about">
                 <a className="link">
@@ -78,11 +78,11 @@ const Index = ({ posts, work, title, description, ...props }) => {
             <SpotifyCurrentlyPlaying playing />
             <hr/>
           </Wrapper>
-          <Wrapper>
+          {/* <Wrapper>
             <Typography variant={'h3'}>Featured 👨‍🏫</Typography>
             <Featured/>
             <hr/>
-          </Wrapper>
+          </Wrapper> */}
           <FAQ/>
         </main>
       </Layout>

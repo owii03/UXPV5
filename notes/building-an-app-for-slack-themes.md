@@ -1,6 +1,6 @@
 ---
 title: 'Designing an App for Slack Themes'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Learning how to scrap together a web app using React, Tailwind, and Firestore'
 date: '2020-12-17'
 hero_image: /static/designing-an-app-for-slack-themes.png
@@ -10,7 +10,7 @@ Can we not only design a web app, but plan and build one as well? Sure we can!
 
 About a year and a half ago, I began to realize I had too many Slack workspaces and had a difficult time differentiating between them. So I set out to build a web app to help collect a bunch Slack Themes where users are able to copy and paste into Slack - [you can find it here](https://slack-themes.now.sh/)!
 
-*__Sidenote:__ I'm not going to delve too much into the code or design, but if you have questions, feel free to look at the [repo on GitHub](https://github.com/ryan-parag/slack-themes) or contact me!*
+*__Sidenote:__ I'm not going to delve too much into the code or design, but if you have questions, feel free to look at the [repo on GitHub](hhttps://github.com/owii03/slack-themes) or contact me!*
 
 Slack gives us a way to customize the theme of each workspace sidebar, and I thought this could be a neat way for others to help personalize and identify their different workspaces.
 
@@ -64,7 +64,7 @@ Slack gives us the ability to customize 9 colors in a theme, all denoted by a la
   top_nav_text: '#DEE5EE',
   categories: ['dark', 'brand'],
   likes: 0,
-  submittedBy: 'Ryan Parag',
+  submittedBy: 'Gloria Christiana',
   created: 1608255573
 }
 ```
@@ -249,4 +249,4 @@ Once we make any edits, we can click *Verify & Transfer* to move the submission 
 
 This is as far as I've made it, but now that we have our data in Firestore, my next objective is to design an experience for an integrated Slack app - rather than copy/paste themes, we could give users the ability to get a theme directly from a */* command!
 
-I didn't delve too much into the code or design here, but if you have questions, feel free to look at the [repo on GitHub](https://github.com/ryan-parag/slack-themes) or contact me using the details below!
+I didn't delve too much into the code or design here, but if you have questions, feel free to look at the [repo on GitHub](https://github.com/owii03/slack-themes) or contact me using the details below!

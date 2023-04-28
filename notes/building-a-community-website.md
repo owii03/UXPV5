@@ -1,6 +1,6 @@
 ---
 title: 'Building a Community Website'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Aggregating Slack groups and events in my local design community'
 date: '2020-07-20'
 hero_image: /static/building-a-community-website.png

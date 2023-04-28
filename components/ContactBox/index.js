@@ -163,8 +163,8 @@ const InlineButton = styled.a`
 `
 
 export const EmailButton = () => {
-  return(
-    <ButtonAnchorTag href="mailto:hello@ryanparag.com?subject=Hey Ryan!">
+  return (
+    <ButtonAnchorTag href="mailto:developeronboards@gmail.com?subject=Hey Gloria!">
       <Send size="20" className="buttonIcon" style={{ color: 'var(--primary)' }} />
       Send me an email!
     </ButtonAnchorTag>
@@ -172,8 +172,8 @@ export const EmailButton = () => {
 }
 
 export const EmailButtonInline = () => {
-  return(
-    <InlineButton href="mailto:hello@ryanparag.com?subject=Hey Ryan!">
+  return (
+    <InlineButton href="mailto:developeronboards@gmail.com?subject=Hey Gloria!">
       <Send size="20" className="buttonIcon" style={{ color: 'var(--primary)' }} />
       Send me an email!
     </InlineButton>
@@ -192,39 +192,39 @@ const ListInner = styled.div`
 `
 
 const ContactBox = () => {
-  return(
-    <ContactContainerLink href="mailto:hello@ryanparag.com?subject=Hey Ryan!">
+  return (
+    <ContactContainerLink href="mailto:developeronboards@gmail.com?subject=Hey Gloria!">
       <ImgContainer>
-        <img src="/static/thanks.png"/>
+        <img src="/static/ok.png" />
       </ImgContainer>
       <ContactContent>
         <ContactH3>
-          Hey, I'm Ryan!
+          Hey, I'm Gloria!
         </ContactH3>
         <p>
           I'm a product designer - currently based in Tampa, FL. If you're looking for help or would like to chat, reach out!
         </p>
       </ContactContent>
       <ContentFooter>
-        <Send size="20" style={{ color: 'var(--primary)' }}/>
+        <Send size="20" style={{ color: 'var(--primary)' }} />
         Send me an email!
       </ContentFooter>
     </ContactContainerLink>
   )
 }
 
-export const ContactAbout = ({img, title, children}) => {
-  return(
+export const ContactAbout = ({ img, title, children }) => {
+  return (
     <ContactContainer>
       {
         img ? (
           <ImgContainer>
-            <img src={img}/>
-            <ProfileImageFlares/>
+            <img src={img} />
+            <ProfileImageFlares />
           </ImgContainer>
         )
-        :
-        null
+          :
+          null
       }
       <ContactContent>
         {
@@ -233,13 +233,13 @@ export const ContactAbout = ({img, title, children}) => {
               {title}
             </ContactH3>
           )
-          :
-          null
+            :
+            null
         }
         {children}
       </ContactContent>
       <ContentFooter>
-       <EmailButtonInline/>
+        <EmailButtonInline />
       </ContentFooter>
     </ContactContainer>
   )
@@ -250,10 +250,10 @@ export default ContactBox
 export const ContactList = () => {
 
   const data = {
-    email: 'parag.ryan@gmail.com',
-    resume: '/static/about/RyanParag-resume.pdf',
-    github: 'https://github.com/ryan-parag',
-    linkedin: 'https://linkedin.com/in/ryan-parag'
+    email: 'developeronboards@gmail.com',
+    resume: '/static/about/Gloria_resumes.pdf',
+    github: 'https://github.com/owii03',
+    linkedin: 'https://id.linkedin.com/in/gloria-christiana-maria-a692551a7'
   }
 
   const [copy, setCopy] = useState(false)
@@ -268,18 +268,18 @@ export const ContactList = () => {
 
   const copyLink = () => {
     copyTextToClipboard(data.email)
-    .then(() => {
-      setCopy(true)
-    })
+      .then(() => {
+        setCopy(true)
+      })
   }
 
   useEffect(() => {
     setTimeout(() => {
       setCopy(false)
     }, 3000)
-  },[copy])
+  }, [copy])
 
-  return(
+  return (
     <>
       <h5>Contact</h5>
       <List>
@@ -290,27 +290,27 @@ export const ContactList = () => {
               <Label subtle mt={2} mb={3}>{data.email}</Label>
             </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <a className="link" href={`mailto:${data.email}?subject=Hey Ryan!`}>
-                <Edit3 size={16} style={{ marginRight: designTokens.space[1] }}/>
+              <a className="link" href={`mailto:${data.email}?subject=Hey Gloria!`}>
+                <Edit3 size={16} style={{ marginRight: designTokens.space[1] }} />
                 Compose
               </a>
-              <span style={{ margin: `0 ${designTokens.space[1]}`}}>|</span>
+              <span style={{ margin: `0 ${designTokens.space[1]}` }}>|</span>
               {
                 copy ? (
                   <span style={{ display: 'inline-flex', alignItems: 'center' }}>
-                    <Check size={16} style={{ marginRight: designTokens.space[1], color: 'var(--primaryDark)' }}/>
+                    <Check size={16} style={{ marginRight: designTokens.space[1], color: 'var(--primaryDark)' }} />
                     Copied
                   </span>
                 )
-                :
-                (
-                  <button onClick={() => copyLink()} className="link">
-                    <Copy size={16} style={{ marginRight: designTokens.space[1] }}/>
-                    Copy
-                  </button>
-                )
+                  :
+                  (
+                    <button onClick={() => copyLink()} className="link">
+                      <Copy size={16} style={{ marginRight: designTokens.space[1] }} />
+                      Copy
+                    </button>
+                  )
               }
-              <input style={{ opacity: '0', width: '0', height: '0', position: 'fixed', top: '-9999px', left: '-9999px' }}type="text" value={data.email} readOnly />
+              <input style={{ opacity: '0', width: '0', height: '0', position: 'fixed', top: '-9999px', left: '-9999px' }} type="text" value={data.email} readOnly />
             </div>
           </ListInner>
         </ListItem>
@@ -333,14 +333,94 @@ export const ContactList = () => {
             </div>
             <div>
               <a className="link" href={data.github} target="_blank">
-                <GitHub size={16} style={{ marginRight: designTokens.space[1] }}/>
+                <GitHub size={16} style={{ marginRight: designTokens.space[1] }} />
                 GitHub
               </a>
-              <span style={{ margin: `0 ${designTokens.space[1]}`}}>|</span>
+              <span style={{ margin: `0 ${designTokens.space[1]}` }}>|</span>
               <a className="link" href={data.linkedin} target="_blank">
-                <Linkedin size={16} style={{ marginRight: designTokens.space[1] }}/>
+                <Linkedin size={16} style={{ marginRight: designTokens.space[1] }} />
                 LinkedIn
               </a>
+            </div>
+          </ListInner>
+        </ListItem>
+      </List>
+    </>
+  )
+}
+
+//place I work
+export const WorkPlace = () => {
+
+  const data = {
+    transcosmos: 'Tokyo-JPN | Jakarta-ID, Intern UX Engineer and QA',
+    link_transcosmos: 'https://www.trans-cosmos.co.id/',
+    monad_tech: 'San Fransisco-US | Jakarta-ID, Full time UX Engineer',
+    link_monad: 'https://monad.com/',
+    bank_mandiri: 'Jakarta-ID, Full time Lead UX Engineer',
+    link_mandiri: 'https://bankmandiri.co.id/',
+    binar_academy: 'Jakarta-ID, Part time UX Facilitator',
+    link_binar: 'https://www.binaracademy.com/',
+    quadrant: 'Singapore-SG | Sydney-AUS | Jakarta-ID, Full time Lead UX Engineer',
+    link_quadrant: 'https://www.quadrant.io/'
+  }
+
+  return (
+    <>
+      <h5>Past Work Place</h5>
+      <List>
+        <ListItem>
+          <ListInner>
+            <div>
+              <Body>Quadrant by Appen 🚀</Body>
+              <Label subtle mt={2} mb={3}>{data.quadrant}</Label>
+            </div>
+            <div>
+              <a href={data.link_quadrant} target="_blank" className="link">Company Profile</a>
+            </div>
+          </ListInner>
+        </ListItem>
+        <ListItem>
+          <ListInner>
+            <div>
+              <Body>Bank Mandiri 🎉</Body>
+              <Label subtle mt={2} mb={3}>{data.bank_mandiri}</Label>
+            </div>
+            <div>
+              <a href={data.link_mandiri} target="_blank" className="link">Company Profile</a>
+            </div>
+          </ListInner>
+        </ListItem>
+        <ListItem>
+          <ListInner>
+            <div>
+              <Body>Binar Academy ✨</Body>
+              <Label subtle mt={2} mb={3}>{data.binar_academy}</Label>
+            </div>
+            <div>
+              <a href={data.link_binar} target="_blank" className="link">Company Profile</a>
+            </div>
+          </ListInner>
+        </ListItem>
+        <ListItem>
+          <ListInner>
+            <div>
+              <Body>Monad Tech 🔥</Body>
+              <Label subtle mt={2} mb={3}>{data.monad_tech}</Label>
+            </div>
+            <div>
+              <a href={data.link_monad} target="_blank" className="link">Company Profile</a>
+            </div>
+          </ListInner>
+        </ListItem>
+        <ListItem>
+          <ListInner>
+            <div>
+              <Body>Transcosmos Indonesia 🍎</Body>
+              <Label subtle mt={2} mb={3}>{data.transcosmos}</Label>
+            </div>
+            <div>
+              <a href={data.link_transcosmos} target="_blank" className="link">Company Profile</a>
             </div>
           </ListInner>
         </ListItem>

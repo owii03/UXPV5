@@ -1,6 +1,6 @@
 ---
 title: 'Thoughts on Design Tools'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'As designers, what are we actually delivering? Mockups? Prototypes?'
 date: '2020-09-10'
 hero_image: /static/thoughts-on-design-tools.png

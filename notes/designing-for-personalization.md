@@ -1,6 +1,6 @@
 ---
 title: 'Designing for Personalization'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'What are the ways we can design more personal experiences for users?'
 date: '2020-09-17'
 hero_image: /static/designing-for-personalization.png

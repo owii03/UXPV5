@@ -1,6 +1,6 @@
 ---
 title: 'Scaling Engagement and Interactivity'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Rebuilding and redesigning a site for a local community of designers'
 date: '2021-01-27'
 hero_image: /static/scaling-engagement-and-interactivity.png

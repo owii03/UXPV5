@@ -102,8 +102,8 @@ const Preview = ({ theme }) => {
               <div style={{ width: '64px'}}>
                 <Logo/>
               </div>
-              <h1>Hey, I'm Ryan!</h1>
-              <p className="lead">I'm a designer and <Randomizer/>. Currently, designing early-phase products at Masonite, based in Tampa, FL.</p>
+              <h1>Hey, I'm Gloria!</h1>
+              <p className="lead">I'm a Product Designer and <Randomizer/>. Currently, designing early-phase products at Masonite, based in Tampa, FL.</p>
               <p>
                 <a className="link">
                   More about me

@@ -32,10 +32,10 @@ const FAQ = ({ type }) => {
     <GridContainer>
       <Contact>
         <ContactAbout
-          title={'Hey, I\'m Ryan.👋'}
+          title={'Hey, I\'m Gloria 👋'}
           img={'/static/profile.png'}
         >
-          <p>I'm a designer and <Randomizer/>.</p>
+          <p>I'm a Product Designer and <Randomizer/>.</p>
           <p><Link href="/about"><a className="link">More about me<span className="icon">&rarr;</span></a></Link></p>
         </ContactAbout>
       </Contact>
@@ -49,7 +49,7 @@ const FAQ = ({ type }) => {
             <>
               <Accordion label="Who are you?">
                 <p>
-                  <strong>Hey, I'm Ryan Parag!</strong> I currently reside in Tampa,FL, where I help simplify the home remodeling experience and help build connected, IoT experiences for homeowners at <a className="link" href="https://ryanparag.com/work/masonite">Masonite</a> - a global manufacturer of doors.
+                  <strong>Hey, I'm Gloria Christiana!</strong> I currently reside in Tampa,FL, where I help simplify the home remodeling experience and help build connected, IoT experiences for homeowners at <a className="link" href="https://ryanparag.com/work/masonite">Masonite</a> - a global manufacturer of doors.
                 </p>
                 <p>
                   Previously, I helped build an enterprise problem-solving platform for payments as the first product designer at <a className="link" href="https://ryanparag.com/work/disputelab">Chargebacks911</a>.
@@ -60,11 +60,11 @@ const FAQ = ({ type }) => {
                 <p>
                   I thrive in fast-paced, collaborative environments and am commited to being transparent in my work and process by trying to <Link href="/notes/"><a>share</a></Link> how I think and design around small and large problems.
                 </p>
-                <p>Feel free to take a look at my work <Link href="/work/"><a className="link">here</a></Link> &mdash; or <a className="link" href="mailto:parag.ryan@gmail.com">contact me</a> for a more in-depth look!</p>
+                <p>Feel free to take a look at my work <Link href="/work/"><a className="link">here</a></Link> &mdash; or <a className="link" href="mailto:developeronboards@gmail.com">contact me</a> for a more in-depth look!</p>
               </Accordion>
               <Accordion label="What do you do in your free time?">
                 <p>
-                  In my free time, you can find me <a className="link" href="https://github.com/ryan-parag">tinkering on a random project</a> (or even this site), learning how to race cars 🏎, traveling to a random spot on the globe 🧳, learning something new 👨‍🏫, or a bunch of other random things .
+                  In my free time, you can find me <a className="link" href="https://github.com/owii03">tinkering on a random project</a> (or even this site), learning how to race cars 🏎, traveling to a random spot on the globe 🧳, learning something new 👨‍🏫, or a bunch of other random things .
                 </p>
                 <p>
                   Take a look at some of my random projects:
@@ -89,7 +89,7 @@ const FAQ = ({ type }) => {
               </Accordion>
               <Accordion label="How do I contact you?">
                 <p>
-                  I'd love to help out or chat &mdash; <strong><a className="link" href="mailto:parag.ryan@gmail.com">email me at parag.ryan@gmail.com!</a></strong> Feel free to contact me if you:
+                  I'd love to help out or chat &mdash; <strong><a className="link" href="mailto:developeronboards@gmail.com">email me at developeronboards@gmail.com!</a></strong> Feel free to contact me if you:
                 </p>
                 <ul>
                   <li>Are looking for a designer who codes?</li>

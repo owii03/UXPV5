@@ -212,7 +212,7 @@ export const LogoWithLabel = ({logo}) => {
             null
           }
           <div>
-            <LogoLabel>Ryan Parag</LogoLabel>
+            <LogoLabel>Gloria Christiana</LogoLabel>
             <LogoSubtitle>Product Designer</LogoSubtitle>
           </div>
         </LogoLabelContainer>

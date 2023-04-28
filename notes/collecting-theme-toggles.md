@@ -1,6 +1,6 @@
 ---
 title: 'Collecting Theme Toggles'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'My collection of dark modes, light modes, and everything in between'
 date: '2020-08-27'
 hero_image: /static/collecting-theme-toggles.png

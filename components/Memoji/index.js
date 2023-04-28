@@ -65,15 +65,16 @@ const ProfileImg = styled.button`
 const Memoji = () => {
 
   const memojis = [
-    'memoji-thanks.png',
-    'memoji-nervous.png',
+    'memoji-blown.png',
+    'memoji-confuse.png',
+    'memoji-fingercross.png',
+    'memoji-shock.png',
+    'memoji-ok.png',
+    'memoji-laugh.png',
+    'memoji-think.png',
+    'memoji-whoops.png',
     'memoji-peace.png',
-    'memoji-shocked.png',
-    'memoji-sleep.png',
-    'memoji-stars.png',
-    'memoji-surprise.png',
-    'memoji-thinking.png',
-    'memoji-eyeroll.png'
+    'memoji-sleep.png'
   ]
 
   const memojiRandom = () => {
@@ -87,9 +88,9 @@ const Memoji = () => {
     setIsRandom(memojiRandom())
   }, [])
 
-  return(
+  return (
     <ProfileImg onClick={() => setIsRandom(memojiRandom())}>
-      <img src={`/static/about/${isRandom}`}/>
+      <img src={`/static/about/${isRandom}`} />
     </ProfileImg>
   )
 }

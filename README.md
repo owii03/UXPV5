@@ -1,8 +1,6 @@
 # Portfolio
 
-[https://ryanparag.com](https://ryanparag.com)
-
-Hello, I'm Ryan and this is the repo for my updated portfolio (also a bit of a UI playground for me to experiment with a few ideas).
+Hello, I'm Gloria Christiana and this is the repo for my updated portfolio (also a bit of a UI playground for me to experiment with a few ideas).
 
 ```bash
 npm run dev

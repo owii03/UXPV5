@@ -1,6 +1,6 @@
 ---
 title: 'Portfolio Redesign'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'The design decisions I made when redesigning my portfolio'
 date: '2020-08-08'
 hero_image: /static/portfolio-redesign.png

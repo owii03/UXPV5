@@ -1,6 +1,6 @@
 ---
 title: 'A Figma Plugin for Design Tokens?'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Creating a plugin to hand-off design tokens more flexibly and easily'
 date: '2020-12-29'
 hero_image: /static/creating-a-design-token-plugin.png

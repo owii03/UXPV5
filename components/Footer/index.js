@@ -4,12 +4,12 @@ import styled from 'styled-components'
 import { designTokens } from '../Theme/designTokens'
 import { LogoWithLabel } from '@components/Logo'
 import { Button, ButtonAnchorTag } from '@components/Button'
-import { GitHub, Dribbble, Codepen, Send, Linkedin } from 'react-feather'
+import { GitHub, Dribbble, Codepen, Send, Linkedin, Book, Figma } from 'react-feather'
 import { Wrapper } from '@components/Layout/'
 import useSWR from 'swr';
 import fetcher from '@utils/fetcher';
 import { LoadingSmall } from '@components/LoadingBox'
-import { format } from 'timeago.js' 
+import { format } from 'timeago.js'
 
 export const IconLink = styled.a`
   align-items: center;
@@ -102,8 +102,8 @@ const BottomColumn = styled.div`
   align-items: center;
 `
 
-const FooterLink = ({link}) => {
-  return(
+const FooterLink = ({ link }) => {
+  return (
     <>
       {
         link.outbound ? (
@@ -113,14 +113,14 @@ const FooterLink = ({link}) => {
             </a>
           </FooterListItem>
         )
-        :
-        (
-          <FooterListItem>
-            <Link href={link.href}>
-              <a>{link.name}</a>
-            </Link>
-          </FooterListItem>
-        )
+          :
+          (
+            <FooterListItem>
+              <Link href={link.href}>
+                <a>{link.name}</a>
+              </Link>
+            </FooterListItem>
+          )
       }
     </>
   )
@@ -130,7 +130,7 @@ const Repo = () => {
 
   const { data, error } = useSWR('/api/site', fetcher);
 
-  if(error) {
+  if (error) {
     return null
   }
 
@@ -152,21 +152,21 @@ const Repo = () => {
                 View Source
               </a>
             </small>
-            <small style={{ color: 'var(--grey700)'}}>
+            <small style={{ color: 'var(--grey700)' }}>
               Last Updated {format(data.repo.updated)}
             </small>
           </div>
         )
-        :
-        (
-          <LoadingSmall/>
-        )
+          :
+          (
+            <LoadingSmall />
+          )
       }
     </>
   )
 }
 
-const DescriptionSection = ({debug,debugGrid}) => {
+const DescriptionSection = ({ debug, debugGrid }) => {
 
   const clearStorage = () => {
     localStorage.removeItem('ryansNotesNewTheme')
@@ -177,68 +177,73 @@ const DescriptionSection = ({debug,debugGrid}) => {
   const social = [
     {
       name: 'CodePen',
-      href: 'https://codepen.io/ryanparag',
+      href: 'https://codepen.io/oiichrism',
       outbound: true,
-      icon: <Codepen size={'16'}/>
-    },{
+      icon: <Codepen size={'16'} />
+    }, {
       name: 'GitHub',
-      href: 'https://github.com/ryan-parag',
+      href: 'https://github.com/owii03',
       outbound: true,
-      icon: <GitHub size={'16'}/>
-    },{
-      name: 'Dribbble',
-      href: 'https://dribbble.com/ryanparag',
+      icon: <GitHub size={'16'} />
+    }, {
+      name: "Uxcel.app",
+      href: "https://app.uxcel.com/user-profile/QR2F6CIFH292",
       outbound: true,
-      icon: <Dribbble size={'16'}/>
-    },{
+      icon: <Book size={"16"} />,
+    }, {
+      name: "Figma",
+      href: "https://www.figma.com/@developeronboar",
+      outbound: true,
+      icon: <Figma size={"16"} />,
+    }, {
       name: 'Linkedin',
-      href: 'https://linkedin.com/in/ryan-parag',
+      href: 'https://www.linkedin.com/in/gloria-christiana-maria-a692551a7/',
       outbound: true,
-      icon: <Linkedin size={'16'}/>
-    },{
+      icon: <Linkedin size={'16'} />
+    }, {
       name: 'Email',
-      href: 'mailto:parag.ryan@gmail.com?subject=Hey Ryan!',
+      href: 'mailto:developeronboards@gmailcom?subject=Hey Gloria!',
       outbound: true,
-      icon: <Send size={'16'}/>
+      icon: <Send size={'16'} />
     }
   ]
 
-  return(
+  return (
     <FooterWide>
-      <LogoWithLabel logo/>
+      <LogoWithLabel logo />
       <IconBar>
-          {
-            social.map(item => (
-              <IconLink key={item.name} aria-label={item.name} href={item.href}>
-                {item.icon}
-              </IconLink>
-            ))
-          }
+        {
+          social.map(item => (
+            <IconLink key={item.name} aria-label={item.name} href={item.href}>
+              {item.icon}
+            </IconLink>
+          ))
+        }
       </IconBar>
       <BottomContainer>
-      <BottomColumn>
-        <Repo/>
-      </BottomColumn>
-      <BottomColumn>
-        <Button small onClick={clearStorage}>Reset Theme</Button>
-      </BottomColumn>
+        <BottomColumn>
+          <Repo />
+        </BottomColumn>
+        <BottomColumn>
+          <Button small onClick={clearStorage}>Reset Theme</Button>
+        </BottomColumn>
       </BottomContainer>
     </FooterWide>
   )
 }
 
-export default function Footer({debug, debugGrid}) {
+export default function Footer({ debug, debugGrid }) {
 
   const list1 = [
     {
       name: 'Home',
       href: '/',
       outbound: false
-    },{
+    }, {
       name: 'Notes/Writing',
       href: '/notes',
       outbound: false
-    },{
+    }, {
       name: 'Portfolio/Work',
       href: '/work',
       outbound: false
@@ -250,11 +255,11 @@ export default function Footer({debug, debugGrid}) {
       name: 'Recent Listens',
       href: '/listening',
       outbound: false
-    },{
+    }, {
       name: 'Worksheets',
       href: '/worksheets',
       outbound: false
-    },{
+    }, {
       name: 'Create a Theme',
       href: '/create-theme',
       outbound: false
@@ -266,18 +271,18 @@ export default function Footer({debug, debugGrid}) {
       name: 'About',
       href: '/about',
       outbound: false
-    },{
+    }, {
       name: 'RSS',
       href: '/rss',
       outbound: false
-    },{
+    }, {
       name: 'Now',
       href: '/now',
       outbound: false
     }
   ]
 
-  return(
+  return (
     <>
       <FooterContainer>
         <Wrapper>
@@ -285,21 +290,21 @@ export default function Footer({debug, debugGrid}) {
             <FooterList>
               {
                 list1.map((item, i) => (
-                  <FooterLink key={i} link={item}/>
+                  <FooterLink key={i} link={item} />
                 ))
               }
             </FooterList>
             <FooterList>
               {
-                list2.map((item,i) => (
-                  <FooterLink key={i} link={item}/>
+                list2.map((item, i) => (
+                  <FooterLink key={i} link={item} />
                 ))
               }
             </FooterList>
             <FooterList>
               {
-                list3.map((item,i) => (
-                  <FooterLink key={i} link={item}/>
+                list3.map((item, i) => (
+                  <FooterLink key={i} link={item} />
                 ))
               }
             </FooterList>

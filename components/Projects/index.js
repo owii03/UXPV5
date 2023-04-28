@@ -236,9 +236,9 @@ export const WorkList = ({work}) => {
           </ListItem>
         ))
       }
-      <ListItem>
+      {/* <ListItem>
         <WorkItem project={portfolio}/>
-      </ListItem>
+      </ListItem> */}
     </List>
   )
 }
@@ -347,7 +347,7 @@ export default function Projects(){
       name: 'Figma',
       description: 'Check out my files and plugins on Figma Community',
       image: '/static/projects/icon-figma.png',
-      link:'https://figma.com/@ryanparag',
+      link:'https://www.figma.com/@developeronboar',
       outbound: true
     }
   ]

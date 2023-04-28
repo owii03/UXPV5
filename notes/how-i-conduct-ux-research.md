@@ -1,6 +1,6 @@
 ---
 title: 'How I conduct UX research'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Using the Google Ventures UX approach to help our small team learn about our users'
 date: '2021-02-28'
 hero_image: /static/how-i-conduct-ux-research.png

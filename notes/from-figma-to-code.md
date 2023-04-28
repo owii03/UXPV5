@@ -1,6 +1,6 @@
 ---
 title: 'From Figma to Code'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Designing a simple Bitcoin Tracker and translating to code'
 date: '2020-09-04'
 hero_image: /static/from-figma-to-code.png

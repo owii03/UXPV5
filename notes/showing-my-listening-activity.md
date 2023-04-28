@@ -1,6 +1,6 @@
 ---
 title: 'Showing my listening activity'
-author: 'Ryan Parag'
+author: 'Gloria Christiana'
 description: 'Reflecting my listening habits in realtime using the Spotify Web API and Next.js'
 date: '2021-03-01'
 hero_image: /static/showing-my-listening-activity.png
