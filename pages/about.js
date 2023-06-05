@@ -51,13 +51,13 @@ const About = ({ posts, title, description, ...props }) => {
               <p className="lead">I'm a Product Designer and <Randomizer />.</p>
               <p>
                 Currently, I'm on the digital innovation team at{" "}
-                <a href="https://www.quadrant.io" target="_blank">
-                  Quadrant by Appen
+                <a href="https://www.bi.go.id/id/default.aspx" target="_blank">
+                  Bank Indonesia
                 </a>{" "}
                 in Jakarta, ID &mdash; curious about how we can design
                 thoughtful products around open-ended problems. Most of our work
                 is centered around emerging, early-phase growth channels &mdash;
-                conceptualizing a simpler geolocation collection and verifier
+                conceptualizing a simpler banking and verifier
                 experience for users, companies, and internal teams.
               </p>
               <p>

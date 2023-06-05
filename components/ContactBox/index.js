@@ -362,6 +362,8 @@ export const WorkPlace = () => {
     binar_academy: 'Jakarta-ID, Part time UX Facilitator',
     link_binar: 'https://www.binaracademy.com/',
     quadrant: 'Singapore-SG | Sydney-AUS | Jakarta-ID, Full time Lead UX Engineer',
+    bank_indonesia: 'Jakarta-ID, Full time Lead UX Engineer',
+    link_bi: 'https://www.bi.go.id/id/default.aspx/',
     link_quadrant: 'https://www.quadrant.io/'
   }
 
@@ -369,6 +371,17 @@ export const WorkPlace = () => {
     <>
       <h5>Past Work Place</h5>
       <List>
+      <ListItem>
+          <ListInner>
+            <div>
+              <Body>Bank Indonsia 🏦</Body>
+              <Label subtle mt={2} mb={3}>{data.bank_indonesia}</Label>
+            </div>
+            <div>
+              <a href={data.link_bi} target="_blank" className="link">Company Profile</a>
+            </div>
+          </ListInner>
+        </ListItem>
         <ListItem>
           <ListInner>
             <div>
